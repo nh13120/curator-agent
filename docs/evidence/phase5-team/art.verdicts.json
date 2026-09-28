@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "checks": {
+        "date_in_window": true,
+        "not_past": true,
+        "price_label_ok": true,
+        "registration_state_ok": true,
+        "tier_evidence_ok": true,
+        "venue_city_ok": true
+      },
+      "event_id": "ev_3889aa795329",
+      "observed": {
+        "date": "2026-10-30T18:00:00-04:00",
+        "price_label": "free_with_registration",
+        "registration_state": "open"
+      },
+      "reason": "All checks pass; event page and registration form confirm details, and the Mira Solano evidence page supports tier 2.",
+      "verdict": "pass"
+    },
+    {
+      "checks": {
+        "date_in_window": true,
+        "not_past": true,
+        "price_label_ok": true,
+        "registration_state_ok": true,
+        "tier_evidence_ok": true,
+        "venue_city_ok": true
+      },
+      "event_id": "ev_63a8b9652adb",
+      "observed": {
+        "date": "2026-10-29T18:00:00-04:00",
+        "price_label": "suggested_donation",
+        "registration_state": "open"
+      },
+      "reason": "All checks pass; suggested $10 donation and open registration confirmed, tier 1 artist needs no evidence.",
+      "verdict": "pass"
+    },
+    {
+      "checks": {
+        "date_in_window": true,
+        "not_past": true,
+        "price_label_ok": true,
+        "registration_state_ok": false,
+        "tier_evidence_ok": false,
+        "venue_city_ok": true
+      },
+      "event_id": "ev_d1e8d02433d2",
+      "observed": {
+        "date": "2026-10-29T12:00:00-04:00",
+        "price_label": "free_for_students",
+        "registration_state": "drop-in"
+      },
+      "reason": "registration_state_ok fails: the page says no registration needed, just show up, a drop-in rather than open. tier_evidence_ok fails: the Lena Ahmadi bio only states she is a museum educator who leads gallery talks, which is not evidence of established-practitioner standing for tier 2.",
+      "verdict": "fail"
+    }
+  ]
+}

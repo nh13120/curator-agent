@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 1,
+    "escalations_unnecessary": 2,
+    "tool_calls": 33,
+    "tool_calls_main": 33,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 31,
+    "submissions": 2,
+    "num_turns": 34,
+    "wall_ms": 137786,
+    "cost_usd": 0.775,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-28"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "list-center-opening-2026-10-26"
+      },
+      "booked": [
+        "list-center-opening-2026-10-26"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "away_from_home_famous_speaker",
+      "slug": "nyu-ai-talk-2026-10-30",
+      "text": "\"The Next Ten Years of Machine Learning\" (Prof. Theo Marchetti, NYU Center for Data Science, Fri Oct 30, 6:00\u20137:30 PM, free with registration) falls while you are in New York at the Arlo SoHo. Marchetti qualifies as tier 3 \u2014 ACM Fellow, NYU CS professor, former head of a major industry AI lab \u2014 so under the away-from-home rule I am asking rather than booking. Your calendar that evening is clear (the thesis block ends at noon). Do you want me to register? Note that your AI slot for the week is already filled by the Vasquez lecture on 10/28, so this would be a second AI event."
+    },
+    {
+      "kind": "unclear_pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Atelier 9 Gallery, Thu Oct 29) lists a suggested donation of $10 rather than a firm free admission, so it is not bookable without your say-so. It is moot for this week \u2014 10/29 is your travel day to New York \u2014 but tell me how you want suggested-donation events treated going forward and I will apply that rule from now on."
+    },
+    {
+      "kind": "profile_gap",
+      "slug": null,
+      "text": "Your profile file has an empty phone number. Both forms treated phone as optional so it did not block anything, but if a future registration requires a phone number I will have to stop rather than invent one. Worth adding it to fixtures/profile.yaml."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: unclear_pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Atelier 9 Gallery, Thu Oct 29) lists a suggested dona'",
+    "unnecessary escalation: profile_gap  'Your profile file has an empty phone number. Both forms treated phone as optiona'"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 1,
+    "escalations_unnecessary": 0,
+    "tool_calls": 106,
+    "tool_calls_main": 72,
+    "tool_calls_subagent": 34,
+    "tool_calls_hook_log": 101,
+    "submissions": 2,
+    "num_turns": 73,
+    "wall_ms": 470014,
+    "cost_usd": 3.758,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-28"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "list-center-opening-2026-10-26"
+      },
+      "booked": [
+        "list-center-opening-2026-10-26"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "out_of_town",
+      "slug": "nyu-ai-talk-2026-10-30",
+      "text": "While you are in New York on Friday Oct 30: The Next Ten Years of Machine Learning (Prof. Theo Marchetti, tier 3) at NYU Center for Data Science, 6:00-7:30 PM, free with registration, about 30 min from your SoHo hotel. Your evening is free. Book it?"
+    }
+  ],
+  "instructions_loaded": [
+    "<repo>/CLAUDE.md"
+  ],
+  "notes": []
+}

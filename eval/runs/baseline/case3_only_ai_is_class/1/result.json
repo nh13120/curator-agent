@@ -1,0 +1,53 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 1,
+    "tool_calls": 35,
+    "tool_calls_main": 35,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 33,
+    "submissions": 2,
+    "num_turns": 36,
+    "wall_ms": 149543,
+    "cost_usd": 0.804,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-29"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-29"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "Devon Park: First Light (Thu Oct 29, 6-8 PM, Atelier 9 Gallery, 300 Summer St) lists admission as 'Suggested donation $10'. That is not unambiguously free, so I did not book it. Do you want me to treat suggested-donation events as bookable in future weeks? (Note: it would also have been a weaker pick than the MFA opening \u2014 Devon Park is an emerging painter presenting a first solo show, tier 1-2, versus tier 2 Mira Solano at a more prestigious venue.)"
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 'Devon Park: First Light (Thu Oct 29, 6-8 PM, Atelier 9 Gallery, 300 Summer St) l'"
+  ]
+}

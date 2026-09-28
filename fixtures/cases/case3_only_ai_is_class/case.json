@@ -1,0 +1,11 @@
+{
+  "case": "case3_only_ai_is_class",
+  "description": "The only 'AI' on the calendar is the recurring 15.071 class plus an AI homework block. Expect an AI event still booked.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

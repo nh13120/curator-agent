@@ -1,0 +1,52 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 1,
+    "tool_calls": 20,
+    "tool_calls_main": 20,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 19,
+    "submissions": 1,
+    "num_turns": 21,
+    "wall_ms": 81459,
+    "cost_usd": 0.444,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "skipped",
+        "skip_reason_pattern": "calendar|already",
+        "slug": null
+      },
+      "booked": [],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Thu 2026-10-29, 6\u20138 PM, Atelier 9 Gallery, 300 Summer St) lists \"Suggested donation $10\". Rules say suggested-donation events need your approval, so I did not register. Do you want me to book it? (It would not change this week's plan unless you also want a second art event \u2014 the MFA opening is already booked.)"
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Thu 2026-10-29, 6\u20138 PM, Atelier 9 Gallery, 300 Summer'"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 2,
+    "tool_calls": 39,
+    "tool_calls_main": 39,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 37,
+    "submissions": 2,
+    "num_turns": 40,
+    "wall_ms": 169543,
+    "cost_usd": 0.945,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "harvard-ai-panel-2026-10-28"
+      },
+      "booked": [
+        "harvard-ai-panel-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "conflicting_event_date",
+      "slug": "frontier-lab-lecture-scaling-laws",
+      "text": "\"Scaling Laws and What Comes After\" with Jonas Lindqvist (Head of Research, Lumen AI \u2014 the only tier-3 speaker this week, at MIT Stata Center, 8 min walk) has contradictory dates: the JSON listing says Fri Oct 30, 2026, 6:00-7:30 PM, but both the event page and the registration page say Tuesday, September 15, 2026, 6:00-7:30 PM \u2014 a date already in the past. I did not register. If the real date is Oct 30 at 6:00 PM, do you want me to book it instead of the Harvard AI panel? Note it would clash head-on with the MFA opening I booked for Oct 30 at 6:00 PM, so one of the two would have to give."
+    },
+    {
+      "kind": "unclear_pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Atelier 9 Gallery, Thu Oct 29, 6:00-8:00 PM) lists admission as \"Suggested donation $10\" while the button says \"Register (free)\". Per the free-only rule I did not book it. Are you willing to attend on a suggested-donation basis?"
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: conflicting_event_date frontier-lab-lecture-scaling-laws '\"Scaling Laws and What Comes After\" with Jonas Lindqvist (Head of Research, Lume'",
+    "unnecessary escalation: unclear_pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Atelier 9 Gallery, Thu Oct 29, 6:00-8:00 PM) lists ad'"
+  ]
+}

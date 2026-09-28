@@ -1,0 +1,2 @@
+{"confirmation": 1, "email": "test.student@example.edu", "kind": "register", "path": "/register/harvard-ai-panel-2026-10-28", "slug": "harvard-ai-panel-2026-10-28", "status": 200, "ts": "2026-09-27T02:22:06.606714+00:00"}
+{"confirmation": 2, "email": "test.student@example.edu", "kind": "register", "path": "/register/mfa-textile-opening-2026-10-30", "slug": "mfa-textile-opening-2026-10-30", "status": 200, "ts": "2026-09-27T02:22:44.838103+00:00"}

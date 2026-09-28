@@ -1,0 +1,18 @@
+# Copy to config/profile.yaml (gitignored) and fill in. Curator fills RSVP
+# forms ONLY from this file or from your explicit Telegram answers. It never
+# invents an answer. Any required form field not covered here becomes a
+# Telegram question (tier 2).
+
+name: "Your Name"
+first_name: "Your"          # some forms split the name; both are needed
+last_name: "Name"
+email: "you@example.com"
+phone: ""                     # leave empty to skip optional phone fields
+affiliation: "MIT Sloan School of Management"
+program: "MSMS 2027"
+student_status: "Graduate student"
+home_address: "Street, Cambridge, MA 02139"   # used only for travel-time estimates
+
+# Saved answers to free-text questions, added when you answer on Telegram
+# and agree to save. Key = normalized question text.
+saved_answers: {}

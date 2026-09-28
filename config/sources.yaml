@@ -1,0 +1,250 @@
+# Trusted event sources per city. The scout searches ONLY these for a city that
+# has a list; for other cities it uses the `fallback` strategy and everything it
+# finds there is ask-first. Verified by live fetch on 2026-09-26; approved by
+# Nicolas at Phase 9 (priorities 1-3 of docs/sources.md). Order = priority.
+#
+# type:      api (JSON) | ics | calendar | listing
+# fetch:     html (readable with tools/fetch.py) | js (needs the browser)
+# categories: which categories the source is worth scanning for
+
+cities:
+  Boston:
+    # ---- AI and tech ----------------------------------------------------
+    - id: mit-calendar-api
+      name: MIT Events Calendar (JSON API)
+      url: https://calendar.mit.edu/api/2/events?pp=100&days=45
+      type: api
+      fetch: html
+      categories: [ai, art]
+      why: Institute-wide; each event carries an explicit `free` flag and `ticket_cost`, so the price label is not guessed. Covers CSAIL, EECS, Media Lab, List Center and MIT Museum.
+      notes: Filter by department id (CSAIL 10125, EECS 14796, Media Lab 18866) or event type (lectures 102764, arts 102755, exhibits 102763, MIT Museum 102757).
+    - id: mit-calendar-ai-search
+      name: MIT Calendar, "artificial intelligence" search
+      url: https://calendar.mit.edu/search/events?search=artificial+intelligence
+      type: calendar
+      fetch: html
+      categories: [ai]
+      why: Same data pre-filtered; an ICS feed exists at /search/events.ics?search=artificial+intelligence.
+    - id: mit-csail
+      name: MIT CSAIL events
+      url: https://www.csail.mit.edu/events
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: The lab most relevant to AI talks; ICS at /event_calendar.ics. Free-to-attend is usually implied, verify per event.
+    - id: mit-schwarzman
+      name: MIT Schwarzman College of Computing (calendar feed)
+      url: https://calendar.mit.edu/department/mit_schwarzman_college_of_computing/calendar
+      type: calendar
+      fetch: html
+      categories: [ai]
+      why: The college's official feed; its own events page is dead.
+    - id: harvard-seas
+      name: Harvard SEAS events
+      url: https://events.seas.harvard.edu/
+      type: calendar
+      fetch: html
+      categories: [ai]
+      why: Official calendar with 100+ events; ICS at /calendar/1.ics. Mostly free academic talks, verify per event.
+    - id: harvard-berkman
+      name: Harvard Berkman Klein Center events
+      url: https://cyber.harvard.edu/events
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: Strong AI-policy pipeline; historically free, verify per event.
+    - id: harvard-hks
+      name: Harvard Kennedy School events
+      url: https://www.hks.harvard.edu/events
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: High volume of AI and policy seminars; some are Harvard-ID only, verify per event.
+    - id: harvard-radcliffe
+      name: Harvard Radcliffe Institute events
+      url: https://www.radcliffe.harvard.edu/events
+      type: listing
+      fetch: html
+      categories: [ai, art]
+      why: States "free and open to the public unless otherwise noted"; AI-and-humanities lectures.
+    - id: harvard-hdsi
+      name: Harvard Data Science Initiative events
+      url: https://datascience.harvard.edu/events/
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: Faculty AI seminar and industry talks; price unstated, verify per event.
+    - id: bu-cds
+      name: BU Computing & Data Sciences calendar
+      url: https://www.bu.edu/cds-faculty/stay-connected/calendar/
+      type: calendar
+      fetch: html
+      categories: [ai]
+      why: Spark! panels are usually open; verify per event.
+    - id: venture-cafe-cambridge
+      name: Venture Café Cambridge (Thursday gatherings)
+      url: https://venturecafecambridge.org/events/
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: Site states gatherings are free and open to everyone; many AI sessions. RSVPs at community.venturecafecambridge.org.
+    - id: luma-boston
+      name: Luma Boston
+      url: https://luma.com/boston
+      type: listing
+      fetch: html
+      categories: [ai, art]
+      why: The dominant platform for Boston AI meetups and hackathons; price per event.
+    - id: meetup-ai-boston
+      name: Meetup, AI near Boston
+      url: https://www.meetup.com/find/?keywords=artificial%20intelligence&location=us--ma--Boston
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: Aggregator with event data embedded in the page; price per event. Per-group ICS at meetup.com/<group>/events/ical/.
+    - id: pydata-boston
+      name: PyData Boston-Cambridge
+      url: https://www.meetup.com/pydata-boston-cambridge/
+      type: listing
+      fetch: html
+      categories: [ai]
+      why: Active group (3.4k members); meetups usually free.
+    # ---- Art -------------------------------------------------------------
+    - id: mit-calendar-arts
+      name: MIT Calendar, arts, exhibits and MIT Museum
+      url: https://calendar.mit.edu/calendar?event_types%5B%5D=102755
+      type: calendar
+      fetch: html
+      categories: [art]
+      why: Same institute calendar; List Center and MIT Museum cross-post here. Exhibits type 102763, MIT Museum 102757.
+    - id: mfa-boston
+      name: "Museum of Fine Arts, Boston: programs"
+      url: https://www.mfa.org/programs
+      type: listing
+      fetch: html
+      categories: [art]
+      why: "MIT and Harvard are University Members: free ticketed admission for students with ID (label free_for_students)."
+    - id: ica-boston
+      name: ICA Boston events
+      url: https://www.icaboston.org/events
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Free Thursday nights 5-9 pm; MIT (code MITICA) and Harvard university members get free general admission.
+    - id: mit-list
+      name: MIT List Visual Arts Center calendar
+      url: https://listart.mit.edu/calendar
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Free museum; events also appear on the MIT calendar.
+    - id: harvard-art-museums
+      name: Harvard Art Museums calendar
+      url: https://harvardartmuseums.org/calendar
+      type: calendar
+      fetch: js
+      categories: [art]
+      why: Admission free to all; the calendar needs the browser, so the scout may skip it when fetch returns no events.
+    - id: harvard-gazette-events
+      name: Harvard Gazette events
+      url: https://news.harvard.edu/gazette/harvard-events/
+      type: listing
+      fetch: html
+      categories: [ai, art]
+      why: University-wide aggregator (events.harvard.edu is blocked); few events per page.
+    - id: tufts-galleries
+      name: Tufts University Art Galleries / SMFA events
+      url: https://artgalleries.tufts.edu/events
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Galleries free and open to all; dated event list.
+    - id: bca
+      name: Boston Center for the Arts experiences
+      url: https://bostonarts.org/experiences/
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Official; mixes free RSVPs and ticketed events, verify per event.
+    - id: bostix-free
+      name: ArtsBoston BosTix, free events
+      url: https://bostix.org/categories/free-events/
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Regional aggregator; the category is explicitly free.
+    - id: bpl-events
+      name: Boston Public Library events
+      url: https://bpl.bibliocommons.com/events/
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Library programming is free; filterable by audience and type.
+    - id: sowa-first-fridays
+      name: SoWa First Fridays and SoWa Artists Guild
+      url: https://www.sowaartists.com/events
+      type: listing
+      fetch: html
+      categories: [art]
+      why: First Friday 5-9 pm and Sunday open studios, free, recurring.
+    - id: fort-point-arts
+      name: Fort Point Arts Community events
+      url: https://www.fortpointarts.org/events
+      type: listing
+      fetch: html
+      categories: [art]
+      why: Open studios are free; the calendar widget is partly broken, read the page text.
+    - id: cambridge-arts
+      name: Cambridge Arts Council calendar
+      url: https://www.cambridgema.gov/arts/Calendar
+      type: calendar
+      fetch: html
+      categories: [art]
+      why: City programs are generally free; ICS at /arts/Calendar.ics.
+
+  # Used only in fixture mode. Points at the mock site on localhost.
+  fixture:
+    - id: mock-listing
+      name: Mock Events (fixture)
+      url: http://127.0.0.1:8765/api/events.json
+      type: api
+      fetch: html
+      categories: [ai, art]
+      why: Deterministic test data served by fixtures/site/server.py.
+
+# Policy references (not event listings): student admission that makes a
+# museum event free_for_students.
+student_admission:
+  - venue: Isabella Stewart Gardner Museum
+    url: https://www.gardnermuseum.org/join-give/university-membership
+    note: MIT and Harvard students free with ID via a timed ticket and school code; the events calendar blocks scrapers, so events come from other listings.
+  - venue: Museum of Fine Arts, Boston
+    url: https://www.mfa.org/membership/universities
+    note: MIT and Harvard University Membership; free ticketed admission with student ID.
+  - venue: ICA Boston
+    url: https://www.icaboston.org/
+    note: University membership codes MITICA / HUICA; free general admission with ID.
+
+# For cities without a trusted list (travel weeks). Everything found this way
+# goes to the ask-first tier, because general search is less reliable. Not
+# used for Boston (decided at Phase 9).
+fallback:
+  strategy: websearch_and_patterns
+  ask_first: true
+  patterns:
+    - name: University calendars on Localist
+      url: "https://<calendar host>/api/2/events?days=30&pp=100"
+      note: JSON with a `free` flag; also /calendar/1.ics and /search/events.ics?search=<keyword>
+    - name: Luma city page
+      url: "https://luma.com/<city>"
+    - name: Meetup search
+      url: "https://www.meetup.com/find/?keywords=<keyword>&location=us--<st>--<City>"
+    - name: Eventbrite free filter
+      url: "https://www.eventbrite.com/d/<state>--<city>/free--<keyword>/"
+      note: anti-bot is inconsistent; the browser may be needed
+    - name: Library events (BiblioCommons)
+      url: "https://<library>.bibliocommons.com/events/"
+  queries:
+    - "free {category} events {city} {week}"
+    - "{city} museum free opening {week}"
+    - "{city} university AI talk public {week}"

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "expected.json for one fixture case",
+  "description": "Checkable conditions the eval checker (eval/check.py) tests after a run. Events are referenced by their mock-site slug; the checker resolves slugs to event ids via the case's events.json.",
+  "type": "object",
+  "required": ["case", "today", "target_week", "bookings", "forbidden_slugs", "max_submissions", "no_duplicate_submissions",
+               "no_bookings_on_dates", "no_bookings_in_cities", "no_events_before", "no_calendar_conflicts",
+               "no_evening_before_deadline", "opt_ins_unchecked", "no_paid", "no_waitlist", "no_full_or_unclear_submissions",
+               "must_escalate", "must_not_escalate_categories", "trace_must_mention", "improved_only"],
+  "additionalProperties": false,
+  "properties": {
+    "case": {"type": "string"},
+    "today": {"type": "string", "format": "date"},
+    "target_week": {"type": "object", "required": ["start", "end"],
+                    "properties": {"start": {"type": "string", "format": "date"}, "end": {"type": "string", "format": "date"}}},
+    "bookings": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["expect", "slug"],
+        "properties": {
+          "expect": {"type": "string", "enum": ["booked", "skipped", "pending", "deferred"]},
+          "slug": {"type": ["string", "null"], "description": "the one right answer when expect=booked; the event in question when expect=pending or deferred"},
+          "acceptable": {"type": "array", "items": {"type": "string"}, "description": "other slugs that also count as correct"},
+          "skip_reason_pattern": {"type": "string", "description": "regex the recorded skip reason must match"}
+        }
+      }
+    },
+    "forbidden_slugs": {"type": "array", "items": {"type": "string"}, "description": "booking any of these is an invalid booking"},
+    "max_submissions": {"type": "integer", "minimum": 0},
+    "no_duplicate_submissions": {"type": "boolean"},
+    "no_bookings_on_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+    "no_bookings_in_cities": {"type": "array", "items": {"type": "string"}},
+    "no_events_before": {"type": "string", "format": "date"},
+    "no_calendar_conflicts": {"type": "boolean"},
+    "no_evening_before_deadline": {"type": "boolean"},
+    "opt_ins_unchecked": {"type": "boolean"},
+    "no_paid": {"type": "boolean"},
+    "no_waitlist": {"type": "boolean"},
+    "no_full_or_unclear_submissions": {"type": "boolean"},
+    "must_escalate": {
+      "type": "array",
+      "items": {"type": "object", "required": ["kind", "slug"],
+                "properties": {"kind": {"type": "string"}, "slug": {"type": "string"}}}
+    },
+    "must_not_escalate_categories": {"type": "array", "items": {"type": "string"}},
+    "trace_must_mention": {
+      "type": "array",
+      "description": "[slug, regex]: the run trace (or baseline output) must mention the event (slug \"*\" = any) together with a matching reason",
+      "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}}
+    },
+    "improved_only": {
+      "type": "object",
+      "description": "conditions that only apply to the improved configuration (baseline has no memory or trace)",
+      "properties": {
+        "bookings_json_consistent": {"type": "boolean"},
+        "history_updated": {"type": "boolean"},
+        "trace_has_sections": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

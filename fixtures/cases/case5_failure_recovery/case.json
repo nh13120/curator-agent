@@ -1,0 +1,11 @@
+{
+  "case": "case5_failure_recovery",
+  "description": "The top AI pick is full (listing still says open) and a stale past-dated event is listed as upcoming. Expect stale rejected, full detected, tier-2 backup booked.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

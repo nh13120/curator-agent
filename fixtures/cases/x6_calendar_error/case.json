@@ -1,0 +1,11 @@
+{
+  "case": "x6_calendar_error",
+  "description": "The calendar write fails on the first attempt (simulated). Expect: one retry, then both events on the calendar; the failure is in the trace.",
+  "fault": "calendar",
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

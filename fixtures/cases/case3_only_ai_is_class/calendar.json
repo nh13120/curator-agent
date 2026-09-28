@@ -1,0 +1,77 @@
+{
+  "calendar_id": "fixture",
+  "events": [
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-27T14:30:00-04:00",
+      "id": "ai071_1",
+      "location": "100 Main St, Cambridge, MA 02142",
+      "recurring": true,
+      "recurring_event_id": "ai071",
+      "start": "2026-10-27T13:00:00-04:00",
+      "summary": "15.071 The AI Edge (class)"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-29T14:30:00-04:00",
+      "id": "ai071_2",
+      "location": "100 Main St, Cambridge, MA 02142",
+      "recurring": true,
+      "recurring_event_id": "ai071",
+      "start": "2026-10-29T13:00:00-04:00",
+      "summary": "15.071 The AI Edge (class)"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-26T16:00:00-04:00",
+      "id": "mas665_1",
+      "location": "MIT Media Lab E14-633",
+      "recurring": true,
+      "recurring_event_id": "mas665",
+      "start": "2026-10-26T13:00:00-04:00",
+      "summary": "MAS.665 AI Ventures (class)"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-30T12:00:00-04:00",
+      "id": "thesis_1",
+      "location": "",
+      "recurring": false,
+      "recurring_event_id": null,
+      "start": "2026-10-30T09:00:00-04:00",
+      "summary": "Thesis writing block"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-30T11:00:00-04:00",
+      "id": "ai071r_1",
+      "location": "100 Main St, Cambridge, MA 02142",
+      "recurring": true,
+      "recurring_event_id": "ai071r",
+      "start": "2026-10-30T10:00:00-04:00",
+      "summary": "15.071 AI Edge — Recitation"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-27T11:00:00-04:00",
+      "id": "aihw_1",
+      "location": "",
+      "recurring": false,
+      "recurring_event_id": null,
+      "start": "2026-10-27T09:00:00-04:00",
+      "summary": "AI HW: finish 15.071 problem set"
+    }
+  ]
+}

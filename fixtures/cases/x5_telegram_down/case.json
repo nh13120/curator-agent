@@ -1,0 +1,11 @@
+{
+  "case": "x5_telegram_down",
+  "description": "Telegram fails on the first send (simulated). Expect: one retry, then normal bookings and messages; the failure is in the trace.",
+  "fault": "telegram",
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 0,
+    "tool_calls": 100,
+    "tool_calls_main": 55,
+    "tool_calls_subagent": 45,
+    "tool_calls_hook_log": 82,
+    "submissions": 2,
+    "num_turns": 56,
+    "wall_ms": 391049,
+    "cost_usd": 2.88,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "harvard-ai-panel-2026-10-28"
+      },
+      "booked": [
+        "harvard-ai-panel-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [],
+  "instructions_loaded": [
+    "<repo>/CLAUDE.md"
+  ],
+  "notes": []
+}

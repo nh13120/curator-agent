@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 1,
+    "escalations_unnecessary": 1,
+    "tool_calls": 29,
+    "tool_calls_main": 29,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 28,
+    "submissions": 2,
+    "num_turns": 30,
+    "wall_ms": 165911,
+    "cost_usd": 0.73,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-28"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "list-center-opening-2026-10-26"
+      },
+      "booked": [
+        "list-center-opening-2026-10-26"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Atelier 9 Gallery, Thu 10/29) lists \"Suggested donation $10\", which the rules put outside what I can book without asking. It was independently unbookable this week anyway \u2014 10/29 is your BOS->JFK travel day \u2014 but if you want suggested-donation events treated as free in future weeks, tell me and I will include them."
+    },
+    {
+      "kind": "travel-famous-speaker",
+      "slug": "nyu-ai-talk-2026-10-30",
+      "text": "\"The Next Ten Years of Machine Learning\" with Prof. Theo Marchetti (NYU Center for Data Science, Fri 10/30, 6:00-7:30 PM, free with registration) falls on a day you are in New York, and his bio supports tier 3 (NYU CS professor, ACM Fellow, former head of a major industry AI lab). The rules say to ask rather than book a famous speaker while you are away from home, so I did not register. Want me to book it? Note your AI slot is already filled by the 10/28 Vasquez lecture in Boston."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Atelier 9 Gallery, Thu 10/29) lists \"Suggested donati'"
+  ]
+}

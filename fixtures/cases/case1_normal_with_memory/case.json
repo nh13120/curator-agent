@@ -1,0 +1,11 @@
+{
+  "case": "case1_normal_with_memory",
+  "description": "Normal week. History holds an attended MFA exhibition (Hokusai). Expect the tier-3 AI lecture on Thursday and the new MFA opening, not Hokusai again, no conflicts.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

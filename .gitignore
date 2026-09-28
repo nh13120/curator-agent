@@ -1,0 +1,50 @@
+# Secrets and personal files
+.env
+.env.*
+!.env.example
+config/profile.yaml
+config/google_token.json
+config/google_client_secret.json
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Runtime state and logs (evidence snapshots are copied into docs/ on purpose)
+logs/
+state/*.json
+state/*.jsonl
+state/candidates/
+state/.fault_*
+!state/.gitkeep
+memory/*.jsonl
+memory/taste.md
+!memory/.gitkeep
+
+# Eval run artifacts: keep result.json and traces, drop the bulky streams
+eval/runs/**/claude.stream.jsonl
+eval/runs/**/screenshots/
+eval/runs/**/mcp.json
+eval/runs/**/state/
+eval/runs/**/memory/
+eval/runs/**/logs/tool_calls.jsonl
+
+# Mock site output
+fixtures/site/*.jsonl
+fixtures/site/*.log
+
+# Playwright MCP default output
+.playwright-mcp/
+
+# Personal permission approvals written by Claude Code
+.claude/settings.local.json
+
+# Dry-run state (bin/run.sh --mode dry)
+dryrun/
+
+# Demo run state (bin/demo.sh)
+demo/
+eval/runs-lean/
+eval/runs-lean2/

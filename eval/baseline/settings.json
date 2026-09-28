@@ -1,0 +1,65 @@
+{
+  "env": {
+    "CURATOR_MODE": "fixture"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(python3 tools/fetch.py *)",
+      "Bash(python3 tools/gcal.py list *)",
+      "Bash(python3 tools/gcal.py free-check *)",
+      "Bash(python3 tools/deadlines.py *)",
+      "Bash(python3 tools/travel.py *)",
+      "mcp__playwright__*"
+    ],
+    "deny": [
+      "Read(fixtures/cases/**/expected.json)",
+      "Read(fixtures/build_cases.py)",
+      "Read(eval/baseline/**)",
+      "Read(eval/check.py)",
+      "Read(eval/run_eval.py)",
+      "Read(eval/runs/**/result.json)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(config/google_token.json)",
+      "Read(config/google_client_secret.json)",
+      "Bash(python3 tools/gcal.py create *)",
+      "Bash(python3 tools/gcal.py delete *)",
+      "Write",
+      "Edit",
+      "MultiEdit",
+      "NotebookEdit",
+      "WebSearch",
+      "WebFetch",
+      "Agent",
+      "Skill",
+      "TodoWrite"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {"type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/tools/hooks/guard.py\"", "timeout": 10}
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {"type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/tools/hooks/log_tool_call.py\"", "timeout": 10}
+        ]
+      }
+    ],
+    "InstructionsLoaded": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {"type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/tools/hooks/log_instructions.py\"", "timeout": 10}
+        ]
+      }
+    ]
+  }
+}

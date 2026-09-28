@@ -1,0 +1,62 @@
+{
+  "ava-chen": {
+    "bio": "Ava Chen is an emerging artist based in Brooklyn. (Fictional profile for testing.)",
+    "name": "Ava Chen",
+    "tier": 1,
+    "title_line": "Artist"
+  },
+  "devon-park": {
+    "bio": "Devon Park is an emerging painter presenting a first solo show. (Fictional profile for testing.)",
+    "name": "Devon Park",
+    "tier": 1,
+    "title_line": "Painter"
+  },
+  "elena-vasquez": {
+    "bio": "Elena Vasquez leads the Frontier Intelligence Lab, one of the largest AI research organizations in the world, and received the 2024 ACM Turing Award for foundational work on large-scale learning systems. (Fictional profile for testing.)",
+    "name": "Dr. Elena Vasquez",
+    "tier": 3,
+    "title_line": "Director, Frontier Intelligence Lab · 2024 ACM Turing Award"
+  },
+  "jonas-lindqvist": {
+    "bio": "Jonas Lindqvist heads research at Lumen AI, a major industry lab, and previously led the machine learning group at a top-five technology company. Author of two widely cited textbooks. (Fictional profile for testing.)",
+    "name": "Jonas Lindqvist",
+    "tier": 3,
+    "title_line": "Head of Research, Lumen AI"
+  },
+  "katsushika-hokusai": {
+    "bio": "Hokusai is among the most recognized artists in history; his work is held by every major museum with an Asian art collection.",
+    "name": "Katsushika Hokusai",
+    "tier": 3,
+    "title_line": "Japanese ukiyo-e artist, 1760–1849"
+  },
+  "lena-ahmadi": {
+    "bio": "Lena Ahmadi leads gallery talks for students and visitors. (Fictional profile for testing.)",
+    "name": "Lena Ahmadi",
+    "tier": 1,
+    "title_line": "Museum educator, Harvard Art Museums"
+  },
+  "marcus-obi": {
+    "bio": "Marcus Obi is an associate professor at Harvard working on machine learning for public policy. (Fictional profile for testing.)",
+    "name": "Prof. Marcus Obi",
+    "tier": 2,
+    "title_line": "Associate Professor of Computer Science, Harvard University"
+  },
+  "mira-solano": {
+    "bio": "Mira Solano is a mid-career artist with solo exhibitions at regional galleries and work in two museum group shows. (Fictional profile for testing.)",
+    "name": "Mira Solano",
+    "tier": 2,
+    "title_line": "Textile and new-media artist"
+  },
+  "priya-natarajan": {
+    "bio": "Priya founded StackPilot, a seed-stage developer tools startup, in 2025. (Fictional profile for testing.)",
+    "name": "Priya Natarajan",
+    "tier": 1,
+    "title_line": "Founder, StackPilot"
+  },
+  "theo-marchetti": {
+    "bio": "Theo Marchetti is a widely recognized leader in machine learning, an ACM Fellow, and previously directed one of the largest industry AI labs. (Fictional profile for testing.)",
+    "name": "Prof. Theo Marchetti",
+    "tier": 3,
+    "title_line": "Professor of Computer Science, NYU · ACM Fellow · former head of a major industry AI lab"
+  }
+}

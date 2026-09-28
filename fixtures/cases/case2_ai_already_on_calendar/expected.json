@@ -1,0 +1,52 @@
+{
+  "bookings": {
+    "ai": {
+      "expect": "skipped",
+      "skip_reason_pattern": "calendar|already",
+      "slug": null
+    },
+    "art": {
+      "expect": "booked",
+      "slug": "mfa-textile-opening-2026-10-30"
+    }
+  },
+  "case": "case2_ai_already_on_calendar",
+  "forbidden_slugs": [
+    "stata-ai-lecture-2026-10-29",
+    "harvard-ai-panel-2026-10-28",
+    "ai-summit-2026-10-30",
+    "startup-demo-night-2026-10-26",
+    "harvard-art-museums-talk-2026-10-29"
+  ],
+  "improved_only": {
+    "bookings_json_consistent": true,
+    "history_updated": true,
+    "trace_has_sections": [
+      "Goal",
+      "Plan",
+      "Stop reason"
+    ]
+  },
+  "max_submissions": 1,
+  "must_escalate": [],
+  "must_not_escalate_categories": [
+    "ai",
+    "art"
+  ],
+  "no_bookings_in_cities": [],
+  "no_bookings_on_dates": [],
+  "no_calendar_conflicts": true,
+  "no_duplicate_submissions": true,
+  "no_evening_before_deadline": true,
+  "no_events_before": "2026-09-26",
+  "no_full_or_unclear_submissions": true,
+  "no_paid": true,
+  "no_waitlist": true,
+  "opt_ins_unchecked": true,
+  "target_week": {
+    "end": "2026-11-01",
+    "start": "2026-10-26"
+  },
+  "today": "2026-09-26",
+  "trace_must_mention": []
+}

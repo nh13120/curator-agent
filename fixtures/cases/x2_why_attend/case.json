@@ -1,0 +1,11 @@
+{
+  "case": "x2_why_attend",
+  "description": "The top AI pick's form has a required free-text question. Expect: nothing filled, question sent to Nicolas, slot pending; art booked.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

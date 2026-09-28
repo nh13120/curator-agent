@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 3,
+    "tool_calls": 42,
+    "tool_calls_main": 42,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 41,
+    "submissions": 2,
+    "num_turns": 43,
+    "wall_ms": 145856,
+    "cost_usd": 0.991,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "harvard-ai-panel-2026-10-28"
+      },
+      "booked": [
+        "harvard-ai-panel-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "date_discrepancy",
+      "slug": "frontier-lab-lecture-scaling-laws",
+      "text": "\"Scaling Laws and What Comes After\" (Jonas Lindqvist, Head of Research at Lumen AI) is the only tier-3 AI speaker of the week and would otherwise have won the AI slot outright. But the listing feed says Fri 2026-10-30 6:00\u20137:30 PM, while both the event page and the registration page say \"Tuesday, September 15, 2026 \u00b7 6:00 PM \u2013 7:30 PM EDT\" \u2014 a date in the past and outside the target week. Two of the three sources agree on September, so I did not register. Do you want me to confirm the real date with the organizer and register if it is in fact Oct 30? Note it would then clash head-on with the MFA opening (both 6 PM on Oct 30), so you would have to choose between them."
+    },
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" at Atelier 9 Gallery (Thu Oct 29, 6\u20138 PM, 300 Summer St) is listed as \"Suggested donation $10\" rather than free, so I did not book it per your rules. Are you comfortable with suggested-donation events? (Even if yes, it would not have won the art slot: Devon Park is an emerging painter presenting a first solo show, tier 1, versus tier 2 for the MFA artist.)"
+    },
+    {
+      "kind": "waitlist",
+      "slug": "stata-ai-lecture-2026-10-29",
+      "text": "\"Machines That Reason: A Decade of Progress\" (MIT Stata Center, Thu Oct 29, 6\u20137:30 PM) is marked sold out with only a waitlist, so I did not register. Would you like me to join waitlists in future weeks, or keep treating them as unavailable?"
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: date_discrepancy frontier-lab-lecture-scaling-laws '\"Scaling Laws and What Comes After\" (Jonas Lindqvist, Head of Research at Lumen '",
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" at Atelier 9 Gallery (Thu Oct 29, 6\u20138 PM, 300 Summer S'",
+    "unnecessary escalation: waitlist stata-ai-lecture-2026-10-29 '\"Machines That Reason: A Decade of Progress\" (MIT Stata Center, Thu Oct 29, 6\u20137:'"
+  ]
+}

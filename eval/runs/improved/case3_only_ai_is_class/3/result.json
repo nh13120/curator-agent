@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 0,
+    "tool_calls": 107,
+    "tool_calls_main": 62,
+    "tool_calls_subagent": 45,
+    "tool_calls_hook_log": 92,
+    "submissions": 2,
+    "num_turns": 63,
+    "wall_ms": 391009,
+    "cost_usd": 3.26,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-29"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-29"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [],
+  "instructions_loaded": [
+    "<repo>/CLAUDE.md"
+  ],
+  "notes": []
+}

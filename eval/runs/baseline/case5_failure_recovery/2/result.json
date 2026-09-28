@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 3,
+    "tool_calls": 36,
+    "tool_calls_main": 36,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 34,
+    "submissions": 2,
+    "num_turns": 37,
+    "wall_ms": 214020,
+    "cost_usd": 0.925,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "harvard-ai-panel-2026-10-28"
+      },
+      "booked": [
+        "harvard-ai-panel-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "conflicting_event_date",
+      "slug": "frontier-lab-lecture-scaling-laws",
+      "text": "'Scaling Laws and What Comes After' with Jonas Lindqvist is the strongest AI speaker of the week \u2014 tier 3 (Head of Research at Lumen AI, 'a major industry lab', previously led ML at a top-five tech company, two widely cited textbooks), and a tier-3 speaker would normally win outright. I did not register because the event's date is self-contradictory: the JSON listing says Friday 2026-10-30 18:00\u201319:30, but both the event page and the registration page say 'Tuesday, September 15, 2026 \u00b7 6:00 PM \u2013 7:30 PM EDT' \u2014 a date already in the past as of today (2026-09-26). The venue, time-of-day and format agree across sources; only the date disagrees. Registration is open and the slot would have been free on Oct 30 (8 min travel from home, gcal free-check clear). Do you want me to register on the assumption the listing's Oct 30 date is correct? Note that Oct 30 18:00 collides with the MFA opening I booked (#2), so I would need to cancel or move the art booking \u2014 the fully free art alternative that week is only tier 1."
+    },
+    {
+      "kind": "pricing_unclear",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "'Devon Park: First Light' at Atelier 9 Gallery (Thu Oct 29, 6\u20138 PM) lists admission as 'Suggested donation $10'. Per your rules I did not book a suggested-donation event without asking. Should suggested-donation events count as free and be bookable in future weeks?"
+    },
+    {
+      "kind": "missing_profile_field",
+      "slug": null,
+      "text": "The profile has an empty phone number. It was optional on both forms, so I left it blank and both registrations went through. If a future form requires a phone, I will stop and ask rather than invent one \u2014 worth adding it to fixtures/profile.yaml."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: conflicting_event_date frontier-lab-lecture-scaling-laws \"'Scaling Laws and What Comes After' with Jonas Lindqvist is the strongest AI spe\"",
+    "unnecessary escalation: pricing_unclear fort-point-gallery-2026-10-29 \"'Devon Park: First Light' at Atelier 9 Gallery (Thu Oct 29, 6\u20138 PM) lists admiss\"",
+    "unnecessary escalation: missing_profile_field  'The profile has an empty phone number. It was optional on both forms, so I left '"
+  ]
+}

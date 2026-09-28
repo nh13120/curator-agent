@@ -1,0 +1,80 @@
+{
+  "1 broadway cambridge ma 02142": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "CIC Cambridge, Venture Café, 1 Broadway, Cambridge, MA 02142",
+    "lat": 42.3628,
+    "lon": -71.0846
+  },
+  "1 oxford st cambridge ma 02138": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Harvard Science Center, Hall C, 1 Oxford St, Cambridge, MA 02138",
+    "lat": 42.3766,
+    "lon": -71.116
+  },
+  "100 main st cambridge ma 02142": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "MIT Sloan E62, 100 Main St, Cambridge, MA 02142",
+    "lat": 42.362,
+    "lon": -71.0842
+  },
+  "20 ames st cambridge ma 02142": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "MIT List Visual Arts Center, 20 Ames St, Cambridge, MA 02142",
+    "lat": 42.3612,
+    "lon": -71.0876
+  },
+  "257 washington st somerville ma 02143": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Juliet, 257 Washington St, Somerville, MA 02143",
+    "lat": 42.38,
+    "lon": -71.098
+  },
+  "300 summer st boston ma 02210": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Atelier 9 Gallery, 300 Summer St, Boston, MA 02210",
+    "lat": 42.3502,
+    "lon": -71.049
+  },
+  "32 quincy st cambridge ma 02138": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Harvard Art Museums, 32 Quincy St, Cambridge, MA 02138",
+    "lat": 42.3741,
+    "lon": -71.1141
+  },
+  "32 vassar st cambridge ma 02139": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "MIT Stata Center, Room 32-123, 32 Vassar St, Cambridge, MA 02139",
+    "lat": 42.3616,
+    "lon": -71.0909
+  },
+  "465 huntington ave boston ma 02115": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Museum of Fine Arts, Boston, 465 Huntington Ave, Boston, MA 02115",
+    "lat": 42.3394,
+    "lon": -71.094
+  },
+  "520 w 21st st new york ny 10011": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Gallery 21 West, 520 W 21st St, New York, NY 10011",
+    "lat": 40.7462,
+    "lon": -74.0053
+  },
+  "60 5th ave new york ny 10011": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "NYU Center for Data Science, 60 5th Ave, New York, NY 10011",
+    "lat": 40.7355,
+    "lon": -73.9945
+  },
+  "79 john f kennedy st cambridge ma 02138": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Harvard Kennedy School, 79 John F. Kennedy St, Cambridge, MA 02138",
+    "lat": 42.3712,
+    "lon": -71.1213
+  },
+  "900 boylston st boston ma 02115": {
+    "at": "2026-09-26T08:00:00-04:00",
+    "display": "Hynes Convention Center, 900 Boylston St, Boston, MA 02115",
+    "lat": 42.3477,
+    "lon": -71.0848
+  }
+}

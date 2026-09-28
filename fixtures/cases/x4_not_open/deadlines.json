@@ -1,0 +1,27 @@
+{
+  "assignments": {
+    "496144": {
+      "action": "removed alarm (submitted)",
+      "at": "2026-10-07T20:00:00+00:00",
+      "due_at": "2026-10-08T03:59:59Z",
+      "submitted": true,
+      "title": "Homework 3: Make Your Agent Autonomous"
+    },
+    "500001": {
+      "action": "created event with alarm (new assignment, unsubmitted)",
+      "at": "2026-09-26T11:49:07+00:00",
+      "due_at": "2026-10-29T03:59:59Z",
+      "submitted": false,
+      "title": "15.071 Homework 4"
+    },
+    "500002": {
+      "action": "created event with alarm (new assignment, unsubmitted)",
+      "at": "2026-09-26T11:49:07+00:00",
+      "due_at": "2026-11-06T04:59:59Z",
+      "submitted": false,
+      "title": "MAS.665 Homework 5"
+    }
+  },
+  "files": {},
+  "last_run": "2026-09-26T11:49:07+00:00"
+}

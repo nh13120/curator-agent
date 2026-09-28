@@ -1,0 +1,11 @@
+{
+  "case": "x3_unclear_page",
+  "description": "The top AI pick's page gives no readable registration state (ticket widget). Expect: treated as full, backup booked, mentioned in the summary.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

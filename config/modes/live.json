@@ -1,0 +1,23 @@
+{
+  "env": {
+    "CURATOR_MODE": "live"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(python3 tools/*)",
+      "mcp__playwright__*",
+      "Agent(scout)",
+      "Agent(verifier)"
+    ],
+    "deny": [
+      "Agent(Explore)",
+      "Agent(Plan)",
+      "Agent(general-purpose)",
+      "Agent(claude)",
+      "Agent(claude-code-guide)",
+      "Agent(statusline-setup)"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}

@@ -1,0 +1,101 @@
+=== selftests ===
+memory    True 3
+taste     True 2
+bookings  True 1
+pending   True 2
+rules     True 3
+=== 1. exclusions from seeded history (Hokusai attended) ===
+- ev_c74a8885cac6 | Hokusai: Inspiration and Influence | 2026-09-12 | Museum of Fine Arts, Boston | history:attended
+=== 2. taste.md BEFORE (from the one seeded rating) ===
+# Taste summary
+
+Derived from 1 rated event(s). Neutral = 3. Regenerated 2026-09-26 08:00.
+Taste only reorders events within the same speaker tier.
+
+## Topics
+- Liked: japanese art (4.0, n=1), prints (4.0, n=1)
+- Disliked: no data
+
+## Venues
+- Liked: museum of fine arts boston (4.0, n=1)
+- Disliked: no data
+
+## Formats
+- Liked: exhibition (4.0, n=1)
+- Disliked: no data
+
+## Recent ratings
+- 2026-09-12 Hokusai: Inspiration and Influence (Museum of Fine Arts, Boston): 4/5 — Loved the prints room.
+=== 3. record a booking (A2) into history + bookings ledger ===
+event_id ev_73766c1b2cdd
+booked {'attempts': 0, 'confirmation': '#1', 'screenshot': None, 'state': 'confirmed', 'submitted_at': None}
+skipped calendar already has a one-off art event
+--- upcoming ---
+[('2026-10-29T18:00', 'Machines That Reason: A Decade')]
+--- due rating now (none; event in future) ---
+0
+--- due rating with clock after the event ---
+['Machines That Reason: A Decade']
+=== 4. pending: ask a tier-2 question, then answer it ===
+answered 2
+0
+=== 5. rating confirms attendance and regenerates taste ===
+attended 5 2
+--- taste.md AFTER ---
+# Taste summary
+
+Derived from 2 rated event(s). Neutral = 3. Regenerated 2026-10-30 08:00.
+Taste only reorders events within the same speaker tier.
+
+## Topics
+- Liked: foundation models (5.0, n=1), japanese art (4.0, n=1), prints (4.0, n=1), reasoning (5.0, n=1)
+- Disliked: no data
+
+## Venues
+- Liked: mit stata center room 32 123 (5.0, n=1), museum of fine arts boston (4.0, n=1)
+- Disliked: no data
+
+## Formats
+- Liked: exhibition (4.0, n=1), lecture (5.0, n=1)
+- Disliked: no data
+
+## Recent ratings
+- 2026-10-29 Machines That Reason: A Decade of Progress (MIT Stata Center, Room 32-123): 5/5 — Best talk this term
+- 2026-09-12 Hokusai: Inspiration and Influence (Museum of Fine Arts, Boston): 4/5 — Loved the prints room.
+--- taste score for a similar future event (reasoning tag, lecture) ---
+5.0 1 ['Machines That Reason: A Decade of Progress rated 5 (topic reasoning, format lecture)']
+--- history.jsonl (latest per event) ---
+[('2026-09-12', 'Hokusai: Inspiration and Inf', 'attended', 4), ('2026-10-29', 'Machines That Reason: A Deca', 'attended', 5)]
+--- exclusions now include A2 ---
+2
+=== 6. rules: change, exclude, show, history, revert ===
+[{'new': 30, 'old': 45, 'path': 'max_travel_min'}]
+[{'new': ['crypto'], 'old': [], 'path': 'exclusions.topics'}]
+Curator rules (v1), home Boston:
+• Weekly: AI ×1, Art ×1
+• Free only; auto-book free, free_with_registration, free_for_students; ask first for suggested_donation, unclear
+• In person only: True; travel ≤ 30 min; buffer 15 min
+• No events after 17:00 the day before an unsubmitted deadline
+• Skip a category if the calendar already has a one-off event of it: True
+• Swaps: allowed (higher speaker tier, > 3 days ahead); waitlists: no
+• Away: quota optional, speaker tier ≥ 3, ask first
+• Exclusions: topics: crypto
+--- rules_history.jsonl (diff of first change) ---
+--- rules.yaml (before)
++++ rules.yaml (after)
+@@ -42,7 +42,7 @@
+ 
+ # Hard filters
+ in_person_only: true
+-max_travel_min: 45           # one way
++max_travel_min: 30           # one way
+ buffer_min: 15               # each side of the event, on top of travel time
+ evening_cutoff: "17:00"      # no events starting after this the day before an unsubmitted deadline
+ never_book_on_travel_days: true
+
+[{'new': 45, 'old': 30, 'path': 'max_travel_min'}]
+[{'new': [], 'old': ['crypto'], 'path': 'exclusions.topics'}]
+--- rules.yaml unchanged vs git? ---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+(empty means identical)
+STATE_DIR=<tmp>/<claude-project>/b2beca45-8ef3-4c63-94eb-26f78cc4104d/scratchpad/mem_1790463262

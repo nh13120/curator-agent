@@ -1,0 +1,52 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 1,
+    "tool_calls": 21,
+    "tool_calls_main": 21,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 20,
+    "submissions": 1,
+    "num_turns": 22,
+    "wall_ms": 116681,
+    "cost_usd": 0.481,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "skipped",
+        "skip_reason_pattern": "calendar|already",
+        "slug": null
+      },
+      "booked": [],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Atelier 9 Gallery, Thu 2026-10-29, 6\u20138 PM) lists admission as \"Suggested donation $10.\" That is not unambiguously free, so I did not register. Do you want me to treat suggested-donation events as bookable in future weeks, or keep excluding them? (Note: it would not have been this week's pick anyway \u2014 Devon Park is tier 1, an emerging painter presenting a first solo show.)"
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Atelier 9 Gallery, Thu 2026-10-29, 6\u20138 PM) lists admi'"
+  ]
+}

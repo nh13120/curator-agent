@@ -1,0 +1,92 @@
+# Curator rules: the single source of truth for what gets booked.
+# Categories are data. Add a category or change a limit here, not in code.
+# Rule changes made through Telegram are applied to this file by tools/rules.py
+# (comments are preserved) and logged in memory/rules_history.jsonl.
+
+version: 1
+timezone: America/New_York
+home_city: Boston            # Boston/Cambridge area counts as home
+home_area: [Boston, Cambridge, Somerville, Brookline, Allston, Brighton, Medford, Charlestown, Newton, Watertown]
+
+categories:
+  - id: ai
+    label: AI
+    per_week: 1              # picks per week (0 disables the category)
+    every_n_weeks: 1         # 2 = every other week
+    description: Talks, lectures, panels, meetups, demos about artificial intelligence.
+  - id: art
+    label: Art
+    per_week: 1
+    every_n_weeks: 1
+    description: Exhibitions, openings, artist talks, screenings, museum programs.
+
+# Things Nicolas has asked to avoid (added through Telegram, e.g. "no more crypto talks").
+exclusions:
+  topics: []
+  speakers: []
+  venues: []
+
+# Skip a category for the week if the calendar already has a qualifying one-off
+# event of that category. Only one-off entries count; classes and recurring
+# series do not. Ambiguous entries leave the slot open and are mentioned in the
+# Telegram summary.
+skip_category_if_calendar_has_one_off: true
+one_off_formats: [talk, lecture, exhibition, opening, meetup, screening, panel, workshop]
+never_counts: [class, recurring series, meeting, study block, work block]
+
+# Price. Only the first three labels may be booked automatically.
+# These three keys are guardrails: tools/rules.py refuses to change them.
+free_only: true
+auto_book_price_labels: [free, free_with_registration, free_for_students]
+ask_first_price_labels: [suggested_donation, unclear]
+excluded_price_labels: [paid]
+
+# Registration platforms (Nicolas, 2026-09-27): register on Luma; never attempt
+# Eventbrite (its checkout shows a CAPTCHA). Events whose registration is on a
+# hand_off host are ask-first: Nicolas gets the link and registers himself.
+registration:
+  prefer: [luma.com, lu.ma]
+  hand_off: [eventbrite.com, eventbrite.co.uk, eventbrite.ca]
+
+# Hard filters
+in_person_only: true
+max_travel_min: 45           # one way
+buffer_min: 15               # each side of the event, on top of travel time
+evening_cutoff: "17:00"      # no events starting after this the day before an unsubmitted deadline
+never_book_on_travel_days: true
+
+# Ranking: speaker tier is a hard sort key, then tiebreakers in this order.
+ranking:
+  primary: speaker_tier
+  tiebreakers: [venue_tier, format_tier, taste_fit, travel_min]
+
+# Novelty
+venue_cooldown_days: 0       # venues may repeat with new content
+never_repeat_event: true
+never_repeat_same_talk: true # same speaker + same title/abstract
+
+# Swaps and backups
+swaps:
+  allowed: true
+  requires_higher_speaker_tier: true
+  min_days_ahead: 3
+waitlists: false             # if the top pick is full, book the backup instead
+
+# While away from home
+away:
+  quota_optional: true
+  min_speaker_tier: 3
+  ask_first: true
+
+# Ratings and attendance
+ratings:
+  prompt_after_end: true
+  reminder_after_days: 3
+  unconfirmed_after_days: 6
+
+# Run budgets (stopping conditions)
+budgets:
+  scout_retries_per_category: 2
+  candidates_per_scout: 4       # 6 until 2026-09-27; the pick is almost always among the top few
+  tool_calls_weekly: 220
+  tool_calls_daily: 80

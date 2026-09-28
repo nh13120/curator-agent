@@ -1,0 +1,28 @@
+{
+  "env": {
+    "CURATOR_MODE": "fixture"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(python3 tools/*)",
+      "mcp__playwright__*",
+      "Agent(scout)",
+      "Agent(verifier)"
+    ],
+    "deny": [
+      "WebSearch",
+      "WebFetch",
+      "Read(fixtures/cases/**/expected.json)",
+      "Read(fixtures/build_cases.py)",
+      "Read(eval/check.py)",
+      "Read(eval/runs/**/result.json)",
+      "Agent(Explore)",
+      "Agent(Plan)",
+      "Agent(general-purpose)",
+      "Agent(claude)",
+      "Agent(claude-code-guide)",
+      "Agent(statusline-setup)"
+    ]
+  }
+}

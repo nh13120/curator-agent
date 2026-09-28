@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 1,
+    "escalations_unnecessary": 2,
+    "tool_calls": 34,
+    "tool_calls_main": 34,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 32,
+    "submissions": 2,
+    "num_turns": 35,
+    "wall_ms": 140212,
+    "cost_usd": 0.821,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-28"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-28"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "list-center-opening-2026-10-26"
+      },
+      "booked": [
+        "list-center-opening-2026-10-26"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "Devon Park: First Light (Atelier 9 Gallery, Thu Oct 29) lists 'Suggested donation $10', so I did not book it. It was also ruled out independently \u2014 Oct 29 is your BOS\u2192JFK travel day \u2014 so no answer is needed for this week, but tell me how you want suggested-donation events handled going forward."
+    },
+    {
+      "kind": "away-from-home",
+      "slug": "nyu-ai-talk-2026-10-30",
+      "text": "While you are in New York, 'The Next Ten Years of Machine Learning' with Prof. Theo Marchetti (NYU Center for Data Science, Fri Oct 30, 6:00\u20137:30 pm) is free with registration and he does qualify as a very famous speaker (ACM Fellow, former head of a major industry AI lab). Per the away-from-home rule I am asking rather than booking. Your AI slot is already filled by the Vasquez lecture, but say the word and I can add this one."
+    },
+    {
+      "kind": "calendar-ambiguity",
+      "slug": null,
+      "text": "Your calendar has 15.071 The AI Edge on Thu Oct 29, 1:00\u20132:30 pm at 100 Main St, Cambridge, but you fly BOS\u2192JFK that morning (8:00\u20139:30 am). I assumed you are in New York from Oct 29 onward and treated the class as remote or stale. This did not change any booking, but you may want to fix the entry."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 \"Devon Park: First Light (Atelier 9 Gallery, Thu Oct 29) lists 'Suggested donatio\"",
+    "unnecessary escalation: calendar-ambiguity  'Your calendar has 15.071 The AI Edge on Thu Oct 29, 1:00\u20132:30 pm at 100 Main St,'"
+  ]
+}

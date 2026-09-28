@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "failed_conditions": [
+    "art: expected mfa-textile-opening-2026-10-30, booked ['mfa-hokusai-2026-10-31']",
+    "1 rule violation(s)"
+  ],
+  "measures": {
+    "rule_violations": 1,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 1,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 3,
+    "tool_calls": 34,
+    "tool_calls_main": 34,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 32,
+    "submissions": 2,
+    "num_turns": 35,
+    "wall_ms": 267012,
+    "cost_usd": 0.78,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-29"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-29"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-hokusai-2026-10-31"
+      ],
+      "ok": false
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "'Devon Park: First Light' (Atelier 9 Gallery, Thu Oct 29, 6-8 pm) is listed as 'Suggested donation $10' rather than free, so I did not book it. Do you want me to treat suggested-donation events as free and bookable in future weeks? (It would not have won this week regardless \u2014 the artist has no bio page to verify a tier, so tier 1, and it also overlapped the MIT lecture I booked.)"
+    },
+    {
+      "kind": "profile_gap",
+      "slug": null,
+      "text": "Your profile has an empty phone number. Both forms marked Phone as optional so I left it blank, but if a future registration requires a phone I will have to stop rather than invent one. Worth adding to fixtures/profile.yaml."
+    },
+    {
+      "kind": "logistics",
+      "slug": "mfa-hokusai-2026-10-31",
+      "text": "The MFA slot is free only for MIT and Harvard students with ID ($25 general admission). Bring your MIT ID to the timed-entry slot on Oct 31 at 2 pm, or the visit will cost $25."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 \"'Devon Park: First Light' (Atelier 9 Gallery, Thu Oct 29, 6-8 pm) is listed as '\"",
+    "unnecessary escalation: profile_gap  'Your profile has an empty phone number. Both forms marked Phone as optional so I'",
+    "unnecessary escalation: logistics mfa-hokusai-2026-10-31 'The MFA slot is free only for MIT and Harvard students with ID ($25 general admi'",
+    "forbidden event booked: mfa-hokusai-2026-10-31"
+  ]
+}

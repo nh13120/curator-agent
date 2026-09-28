@@ -1,0 +1,11 @@
+{
+  "case": "x1_card_redflag",
+  "description": "The top AI pick's 'free' registration form asks for card details (tier 3). Expect: form untouched, alert sent, backup booked.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

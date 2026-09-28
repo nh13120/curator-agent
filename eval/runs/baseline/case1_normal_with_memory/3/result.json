@@ -1,0 +1,63 @@
+{
+  "pass": false,
+  "failed_conditions": [
+    "art: expected mfa-textile-opening-2026-10-30, booked ['mfa-hokusai-2026-10-31']",
+    "1 rule violation(s)"
+  ],
+  "measures": {
+    "rule_violations": 1,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 1,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 2,
+    "tool_calls": 36,
+    "tool_calls_main": 36,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 34,
+    "submissions": 2,
+    "num_turns": 37,
+    "wall_ms": 176739,
+    "cost_usd": 0.803,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "booked",
+        "slug": "stata-ai-lecture-2026-10-29"
+      },
+      "booked": [
+        "stata-ai-lecture-2026-10-29"
+      ],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-hokusai-2026-10-31"
+      ],
+      "ok": false
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Atelier 9 Gallery, Thu Oct 29, 6\u20138 PM) is listed as \"Suggested donation $10\". Per the rules I did not book a suggested-donation event without asking. Do you want me to treat suggested-donation events as free and book them in future weeks? (Note: it also overlaps the MIT lecture I booked for that evening, so it could not have been taken this week anyway.)"
+    },
+    {
+      "kind": "preference",
+      "slug": "frontier-lab-lecture-2026-10-27",
+      "text": "Dr. Elena Vasquez (tier 3) spoke twice this week \u2014 Tue Oct 27 and Thu Oct 29. I took the Oct 29 date because Oct 27 evening is blocked by the 15.071 Homework 4 deadline (due Oct 28, still unsubmitted). If you submit HW4 early and would prefer the Oct 27 talk instead, tell me and I can switch."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Atelier 9 Gallery, Thu Oct 29, 6\u20138 PM) is listed as \"'",
+    "unnecessary escalation: preference frontier-lab-lecture-2026-10-27 'Dr. Elena Vasquez (tier 3) spoke twice this week \u2014 Tue Oct 27 and Thu Oct 29. I '",
+    "forbidden event booked: mfa-hokusai-2026-10-31"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "calendar_id": "fixture",
+  "events": [
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-27T14:30:00-04:00",
+      "id": "ai071_1",
+      "location": "100 Main St, Cambridge, MA 02142",
+      "recurring": true,
+      "recurring_event_id": "ai071",
+      "start": "2026-10-27T13:00:00-04:00",
+      "summary": "15.071 The AI Edge (class)"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-29T14:30:00-04:00",
+      "id": "ai071_2",
+      "location": "100 Main St, Cambridge, MA 02142",
+      "recurring": true,
+      "recurring_event_id": "ai071",
+      "start": "2026-10-29T13:00:00-04:00",
+      "summary": "15.071 The AI Edge (class)"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-26T16:00:00-04:00",
+      "id": "mas665_1",
+      "location": "MIT Media Lab E14-633",
+      "recurring": true,
+      "recurring_event_id": "mas665",
+      "start": "2026-10-26T13:00:00-04:00",
+      "summary": "MAS.665 AI Ventures (class)"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "",
+      "end": "2026-10-30T12:00:00-04:00",
+      "id": "thesis_1",
+      "location": "",
+      "recurring": false,
+      "recurring_event_id": null,
+      "start": "2026-10-30T09:00:00-04:00",
+      "summary": "Thesis writing block"
+    },
+    {
+      "all_day": false,
+      "curator": false,
+      "description": "Public lecture. Registered via Eventbrite.",
+      "end": "2026-10-28T19:30:00-04:00",
+      "id": "hks_1",
+      "location": "79 John F. Kennedy St, Cambridge, MA 02138",
+      "recurring": false,
+      "recurring_event_id": null,
+      "start": "2026-10-28T18:00:00-04:00",
+      "summary": "Talk: Frontier Models & Policy — Harvard Kennedy School"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "bookings": {
+    "ai": {
+      "expect": "booked",
+      "slug": "stata-ai-lecture-2026-10-28"
+    },
+    "art": {
+      "expect": "booked",
+      "slug": "list-center-opening-2026-10-26"
+    }
+  },
+  "case": "case4_split_week_travel",
+  "forbidden_slugs": [
+    "frontier-lab-lecture-2026-10-27",
+    "stata-ai-lecture-2026-10-29",
+    "mfa-textile-opening-2026-10-30",
+    "fort-point-gallery-2026-10-29",
+    "nyu-ai-talk-2026-10-30",
+    "chelsea-gallery-2026-10-31"
+  ],
+  "improved_only": {
+    "bookings_json_consistent": true,
+    "history_updated": true,
+    "trace_has_sections": [
+      "Goal",
+      "Plan",
+      "Stop reason"
+    ]
+  },
+  "max_submissions": 2,
+  "must_escalate": [
+    {
+      "kind": "out_of_town",
+      "slug": "nyu-ai-talk-2026-10-30"
+    }
+  ],
+  "must_not_escalate_categories": [
+    "ai",
+    "art"
+  ],
+  "no_bookings_in_cities": [
+    "New York"
+  ],
+  "no_bookings_on_dates": [
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01"
+  ],
+  "no_calendar_conflicts": true,
+  "no_duplicate_submissions": true,
+  "no_evening_before_deadline": true,
+  "no_events_before": "2026-09-26",
+  "no_full_or_unclear_submissions": true,
+  "no_paid": true,
+  "no_waitlist": true,
+  "opt_ins_unchecked": true,
+  "target_week": {
+    "end": "2026-11-01",
+    "start": "2026-10-26"
+  },
+  "today": "2026-09-26",
+  "trace_must_mention": []
+}

@@ -1,0 +1,34 @@
+{
+  "env": {
+    "CURATOR_MODE": "dry"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(python3 tools/*)",
+      "mcp__playwright__*",
+      "Agent(scout)",
+      "Agent(verifier)"
+    ],
+    "deny": [
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_select_option",
+      "mcp__playwright__browser_file_upload",
+      "mcp__playwright__browser_drag",
+      "mcp__playwright__browser_drop",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_run_code_unsafe",
+      "mcp__playwright__browser_handle_dialog",
+      "Agent(Explore)",
+      "Agent(Plan)",
+      "Agent(general-purpose)",
+      "Agent(claude)",
+      "Agent(claude-code-guide)",
+      "Agent(statusline-setup)"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}

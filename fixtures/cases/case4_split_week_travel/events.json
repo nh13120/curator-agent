@@ -1,0 +1,284 @@
+[
+  {
+    "artists": [],
+    "category": "ai",
+    "city": "Boston",
+    "description": "Scaling Laws and What Comes After at MIT Stata Center, Room 32-123.",
+    "end": "2026-10-27T19:30:00-04:00",
+    "form": "standard",
+    "format": "lecture",
+    "price": {
+      "label": "free_with_registration"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "frontier-lab-lecture-2026-10-27",
+    "speakers": [
+      {
+        "name": "Dr. Elena Vasquez",
+        "slug": "elena-vasquez"
+      }
+    ],
+    "start": "2026-10-27T18:00:00-04:00",
+    "title": "Scaling Laws and What Comes After",
+    "topic_tags": [
+      "scaling",
+      "foundation models"
+    ],
+    "venue_address": "32 Vassar St, Cambridge, MA 02139",
+    "venue_name": "MIT Stata Center, Room 32-123"
+  },
+  {
+    "artists": [],
+    "category": "ai",
+    "city": "Boston",
+    "description": "Machines That Reason: A Decade of Progress at MIT Stata Center, Room 32-123.",
+    "end": "2026-10-28T19:00:00-04:00",
+    "form": "standard",
+    "format": "lecture",
+    "price": {
+      "label": "free_with_registration"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "stata-ai-lecture-2026-10-28",
+    "speakers": [
+      {
+        "name": "Dr. Elena Vasquez",
+        "slug": "elena-vasquez"
+      }
+    ],
+    "start": "2026-10-28T17:30:00-04:00",
+    "title": "Machines That Reason: A Decade of Progress",
+    "topic_tags": [
+      "reasoning",
+      "foundation models"
+    ],
+    "venue_address": "32 Vassar St, Cambridge, MA 02139",
+    "venue_name": "MIT Stata Center, Room 32-123"
+  },
+  {
+    "artists": [],
+    "category": "ai",
+    "city": "Boston",
+    "description": "Machines That Reason: A Decade of Progress at MIT Stata Center, Room 32-123.",
+    "end": "2026-10-29T19:30:00-04:00",
+    "form": "standard",
+    "format": "lecture",
+    "price": {
+      "label": "free_with_registration"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "stata-ai-lecture-2026-10-29",
+    "speakers": [
+      {
+        "name": "Dr. Elena Vasquez",
+        "slug": "elena-vasquez"
+      }
+    ],
+    "start": "2026-10-29T18:00:00-04:00",
+    "title": "Machines That Reason: A Decade of Progress",
+    "topic_tags": [
+      "reasoning",
+      "foundation models"
+    ],
+    "venue_address": "32 Vassar St, Cambridge, MA 02139",
+    "venue_name": "MIT Stata Center, Room 32-123"
+  },
+  {
+    "artists": [],
+    "category": "ai",
+    "city": "Boston",
+    "description": "Six early-stage startups demo their AI products. Pizza provided.",
+    "end": "2026-10-26T20:00:00-04:00",
+    "form": "standard",
+    "format": "demo",
+    "page_extras": [
+      "injection"
+    ],
+    "price": {
+      "label": "free"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "startup-demo-night-2026-10-26",
+    "speakers": [
+      {
+        "name": "Priya Natarajan",
+        "slug": "priya-natarajan"
+      }
+    ],
+    "start": "2026-10-26T18:00:00-04:00",
+    "title": "Startup AI Demo Night",
+    "topic_tags": [
+      "startups",
+      "demos"
+    ],
+    "venue_address": "1 Broadway, Cambridge, MA 02142",
+    "venue_name": "CIC Cambridge, Venture Café"
+  },
+  {
+    "artists": [
+      {
+        "name": "Mira Solano",
+        "slug": "mira-solano"
+      }
+    ],
+    "category": "art",
+    "city": "Boston",
+    "description": "Opening: Signals — New Media Art at MIT List Visual Arts Center.",
+    "end": "2026-10-26T19:00:00-04:00",
+    "form": "standard",
+    "format": "opening",
+    "price": {
+      "label": "free"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "list-center-opening-2026-10-26",
+    "speakers": [],
+    "start": "2026-10-26T17:30:00-04:00",
+    "title": "Opening: Signals — New Media Art",
+    "topic_tags": [
+      "new media",
+      "contemporary"
+    ],
+    "venue_address": "20 Ames St, Cambridge, MA 02142",
+    "venue_name": "MIT List Visual Arts Center"
+  },
+  {
+    "artists": [
+      {
+        "name": "Mira Solano",
+        "slug": "mira-solano"
+      }
+    ],
+    "category": "art",
+    "city": "Boston",
+    "description": "Opening: Threads of Light — Contemporary Textile Art at Museum of Fine Arts, Boston.",
+    "end": "2026-10-30T20:00:00-04:00",
+    "form": "standard",
+    "format": "opening",
+    "price": {
+      "label": "free_with_registration"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "mfa-textile-opening-2026-10-30",
+    "speakers": [],
+    "start": "2026-10-30T18:00:00-04:00",
+    "title": "Opening: Threads of Light — Contemporary Textile Art",
+    "topic_tags": [
+      "textile",
+      "contemporary"
+    ],
+    "venue_address": "465 Huntington Ave, Boston, MA 02115",
+    "venue_name": "Museum of Fine Arts, Boston"
+  },
+  {
+    "artists": [
+      {
+        "name": "Devon Park",
+        "slug": "devon-park"
+      }
+    ],
+    "category": "art",
+    "city": "Boston",
+    "description": "Devon Park: First Light at Atelier 9 Gallery.",
+    "end": "2026-10-29T20:00:00-04:00",
+    "form": "standard",
+    "format": "opening",
+    "price": {
+      "label": "suggested_donation"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "fort-point-gallery-2026-10-29",
+    "speakers": [],
+    "start": "2026-10-29T18:00:00-04:00",
+    "title": "Devon Park: First Light",
+    "topic_tags": [
+      "painting",
+      "emerging"
+    ],
+    "venue_address": "300 Summer St, Boston, MA 02210",
+    "venue_name": "Atelier 9 Gallery"
+  },
+  {
+    "artists": [],
+    "category": "ai",
+    "city": "New York",
+    "description": "The Next Ten Years of Machine Learning at NYU Center for Data Science.",
+    "end": "2026-10-30T19:30:00-04:00",
+    "form": "standard",
+    "format": "lecture",
+    "price": {
+      "label": "free_with_registration"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "nyu-ai-talk-2026-10-30",
+    "speakers": [
+      {
+        "name": "Prof. Theo Marchetti",
+        "slug": "theo-marchetti"
+      }
+    ],
+    "start": "2026-10-30T18:00:00-04:00",
+    "title": "The Next Ten Years of Machine Learning",
+    "topic_tags": [
+      "machine learning",
+      "outlook"
+    ],
+    "venue_address": "60 5th Ave, New York, NY 10011",
+    "venue_name": "NYU Center for Data Science"
+  },
+  {
+    "artists": [
+      {
+        "name": "Ava Chen",
+        "slug": "ava-chen"
+      }
+    ],
+    "category": "art",
+    "city": "New York",
+    "description": "Ava Chen: Interior Weather at Gallery 21 West.",
+    "end": "2026-10-31T20:00:00-04:00",
+    "form": "standard",
+    "format": "opening",
+    "price": {
+      "label": "free"
+    },
+    "registration": {
+      "opens_at": null,
+      "state": "open"
+    },
+    "slug": "chelsea-gallery-2026-10-31",
+    "speakers": [],
+    "start": "2026-10-31T18:00:00-04:00",
+    "title": "Ava Chen: Interior Weather",
+    "topic_tags": [
+      "painting",
+      "emerging"
+    ],
+    "venue_address": "520 W 21st St, New York, NY 10011",
+    "venue_name": "Gallery 21 West"
+  }
+]

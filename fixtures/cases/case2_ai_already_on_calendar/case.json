@@ -1,0 +1,11 @@
+{
+  "case": "case2_ai_already_on_calendar",
+  "description": "A one-off AI talk (Harvard Kennedy School) is already on the calendar. Expect AI skipped, art booked.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

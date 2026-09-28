@@ -1,0 +1,46 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 0,
+    "tool_calls": 64,
+    "tool_calls_main": 38,
+    "tool_calls_subagent": 26,
+    "tool_calls_hook_log": 52,
+    "submissions": 1,
+    "num_turns": 39,
+    "wall_ms": 262835,
+    "cost_usd": 1.621,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "skipped",
+        "skip_reason_pattern": "calendar|already",
+        "slug": null
+      },
+      "booked": [],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [],
+  "instructions_loaded": [
+    "<repo>/CLAUDE.md"
+  ],
+  "notes": []
+}

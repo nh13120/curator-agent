@@ -1,0 +1,160 @@
+{
+  "weeks": {
+    "2026-10-26": {
+      "ai": {
+        "ambiguities": [],
+        "backup": null,
+        "calendar_event_id": null,
+        "pick": {
+          "artists": [],
+          "auto_bookable": true,
+          "category": "ai",
+          "city": "Cambridge",
+          "eligible": true,
+          "end": "2026-10-29T17:00:00-04:00",
+          "event_id": "ev_6cf53c9d9e4f",
+          "event_url": "https://calendar.mit.edu/event/2026-nano-summit-discovery-processes-of-tomorrow",
+          "flags": [],
+          "format": "talk",
+          "format_tier": 3,
+          "ineligible_reasons": [],
+          "notes": "Dario Gil is Under Secretary for Science, U.S. DOE, and former Director of IBM Research (per event page). Focus is nanoscience and engineering convergence with AI; one dedicated session on AI for materials discovery.",
+          "price_evidence": "Registration form (mitnano.mit.edu/form/the-nano-summit) collects only name, email, and MIT affiliation - no payment or ticket-price field present.",
+          "price_label": "free_with_registration",
+          "registration_state": "open",
+          "registration_url": "https://mitnano.mit.edu/form/the-nano-summit",
+          "source_id": "mit-calendar-ai-search",
+          "speaker_tier": 3,
+          "speakers": [
+            {
+              "evidence_url": "https://mitnano.mit.edu/events/2026-nano-summit",
+              "name": "Dario Gil",
+              "tier": 3
+            },
+            {
+              "evidence_url": "https://mitnano.mit.edu/events/2026-nano-summit",
+              "name": "Richard Gottscho",
+              "tier": 2
+            }
+          ],
+          "start": "2026-10-29T09:00:00-04:00",
+          "taste_fit": 3.0,
+          "taste_why": [],
+          "title": "2026 Nano Summit: Discovery Processes of Tomorrow",
+          "topic_tags": [
+            "AI for materials discovery",
+            "nanotechnology",
+            "emerging technologies"
+          ],
+          "travel_method": "walk",
+          "travel_min": 6,
+          "venue_address": "51 Vassar Street, Cambridge, MA 02139",
+          "venue_evidence_url": "https://mitnano.mit.edu/events/2026-nano-summit",
+          "venue_name": "MIT Building 45 (Schwarzman College of Computing), 8th Floor",
+          "venue_tier": 3,
+          "verified": true
+        },
+        "registration": {
+          "attempts": 0,
+          "confirmation": null,
+          "screenshot": null,
+          "state": "none",
+          "submitted_at": null
+        },
+        "skip_reason": null,
+        "status": "pending",
+        "updated_at": "2026-09-26T23:43:20.167373-04:00"
+      },
+      "art": {
+        "ambiguities": [],
+        "backup": {
+          "artists": [],
+          "auto_bookable": true,
+          "category": "art",
+          "city": "Boston",
+          "eligible": true,
+          "end": "2026-11-01T16:00:00-04:00",
+          "event_id": "ev_790e473bc7b7",
+          "event_url": "https://www.sowaartists.com/events",
+          "flags": [],
+          "format": "other",
+          "format_tier": 1,
+          "ineligible_reasons": [],
+          "notes": "Recurring weekly drop-in studio visit event (no named artist or curator); low format and venue tier reflects the informal, vendor-run nature of the listing rather than any content quality issue.",
+          "price_evidence": "Family friendly and free event. Plenty of parking is available.",
+          "price_label": "free",
+          "registration_state": "none",
+          "registration_url": "",
+          "source_id": "sowa-first-fridays",
+          "speaker_tier": 1,
+          "speakers": [],
+          "start": "2026-11-01T11:00:00-04:00",
+          "taste_fit": 3.0,
+          "taste_why": [],
+          "title": "SoWa Sunday (Open Studios)",
+          "topic_tags": [
+            "open studios",
+            "drop-in",
+            "South End artists"
+          ],
+          "travel_method": "transit_estimate",
+          "travel_min": 22,
+          "venue_address": "450 Harrison Ave, Boston, MA 02118",
+          "venue_evidence_url": "https://www.sowaartists.com/events",
+          "venue_name": "SoWa Artists Guild",
+          "venue_tier": 1,
+          "verified": true
+        },
+        "calendar_event_id": "dj52afj47oajgo63md38f6rcvc",
+        "pick": {
+          "artists": [],
+          "auto_bookable": true,
+          "category": "art",
+          "city": "Boston",
+          "eligible": true,
+          "end": "2026-11-01T17:00:00-04:00",
+          "event_id": "ev_acaab18af9be",
+          "event_url": "https://www.icaboston.org/events/veronica-robles-cultural-center-day-of-the-dead/",
+          "flags": [],
+          "format": "exhibition",
+          "format_tier": 2,
+          "ineligible_reasons": [],
+          "notes": "Multi-day event runs Sat Oct 31 (10AM-5PM), Sun Nov 1 (10AM-5PM), and Mon Nov 2 (10AM-4PM, school tours only); only the first two dates fall inside the requested window. Presented by community partner Veronica Robles Cultural Center at the ICA satellite Watershed venue in East Boston.",
+          "price_evidence": "Free / At the ICA Watershed",
+          "price_label": "free",
+          "registration_state": "none",
+          "registration_url": "",
+          "source_id": "ica-boston",
+          "speaker_tier": 1,
+          "speakers": [],
+          "start": "2026-10-31T10:00:00-04:00",
+          "taste_fit": 3.0,
+          "taste_why": [],
+          "title": "Watershed Community Event | Veronica Robles Cultural Center Day of the Dead",
+          "topic_tags": [
+            "Dia de los Muertos",
+            "community exhibition",
+            "Latinx culture"
+          ],
+          "travel_method": "transit_estimate",
+          "travel_min": 28,
+          "venue_address": "256 Marginal St., East Boston, MA",
+          "venue_evidence_url": "https://www.icaboston.org/events/veronica-robles-cultural-center-day-of-the-dead/",
+          "venue_name": "ICA Watershed",
+          "venue_tier": 3,
+          "verified": true
+        },
+        "registration": {
+          "attempts": 0,
+          "confirmation": null,
+          "screenshot": null,
+          "state": "none",
+          "submitted_at": null
+        },
+        "skip_reason": null,
+        "status": "booked",
+        "updated_at": "2026-09-26T23:43:19.297185-04:00"
+      }
+    }
+  }
+}

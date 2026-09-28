@@ -1,0 +1,11 @@
+{
+  "case": "case4_split_week_travel",
+  "description": "Boston Mon-Wed, New York Thu-Sun, flying Thursday. Expect Boston bookings only Mon-Wed, New York only as ask-first, nothing on travel days.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}

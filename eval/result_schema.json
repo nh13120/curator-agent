@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "required": ["bookings", "skipped", "questions", "rejected", "notes"],
+  "properties": {
+    "bookings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "title", "event_url", "confirmed"],
+        "properties": {
+          "category": {"type": "string"},
+          "title": {"type": "string"},
+          "event_url": {"type": "string"},
+          "registration_url": {"type": "string"},
+          "confirmation": {"type": "string"},
+          "confirmed": {"type": "boolean"},
+          "why": {"type": "string"}
+        }
+      }
+    },
+    "skipped": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "reason"],
+        "properties": {"category": {"type": "string"}, "reason": {"type": "string"}}
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "text"],
+        "properties": {"kind": {"type": "string"}, "event_url": {"type": "string"}, "text": {"type": "string"}}
+      }
+    },
+    "rejected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "reason"],
+        "properties": {"title": {"type": "string"}, "event_url": {"type": "string"}, "reason": {"type": "string"}}
+      }
+    },
+    "notes": {"type": "string"}
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "failed_conditions": [],
+  "measures": {
+    "rule_violations": 0,
+    "calendar_conflicts": 0,
+    "invalid_events_booked": 0,
+    "escalations_appropriate": 0,
+    "escalations_unnecessary": 2,
+    "tool_calls": 21,
+    "tool_calls_main": 21,
+    "tool_calls_subagent": 0,
+    "tool_calls_hook_log": 20,
+    "submissions": 1,
+    "num_turns": 22,
+    "wall_ms": 115752,
+    "cost_usd": 0.503,
+    "exit_code": 0
+  },
+  "bookings": {
+    "ai": {
+      "expected": {
+        "expect": "skipped",
+        "skip_reason_pattern": "calendar|already",
+        "slug": null
+      },
+      "booked": [],
+      "ok": true
+    },
+    "art": {
+      "expected": {
+        "expect": "booked",
+        "slug": "mfa-textile-opening-2026-10-30"
+      },
+      "booked": [
+        "mfa-textile-opening-2026-10-30"
+      ],
+      "ok": true
+    }
+  },
+  "escalations": [
+    {
+      "kind": "pricing",
+      "slug": "fort-point-gallery-2026-10-29",
+      "text": "\"Devon Park: First Light\" (Atelier 9 Gallery, 300 Summer St, Boston \u2014 Thu Oct 29, 6\u20138 pm) lists admission as \"Suggested donation $10\". Suggested-donation events are not bookable without your approval, so I left it alone. Do you want me to register you for events with a suggested donation (and if so, up to what amount)? Note: its slot was otherwise clear (23 min travel, Oct 29 evening free after your 1\u20132:30 pm class, and Oct 29 is not a blocked evening), so it is a live option if you approve donations. I did not verify Devon Park's tier since the pricing rule already excluded it."
+    },
+    {
+      "kind": "profile-gap",
+      "slug": "harvard-art-museums-talk-2026-10-29",
+      "text": "The Harvard Art Museums gallery talk is free only \"for MIT and Harvard students with ID\" ($25 general admission). I did not need to resolve this because the event conflicts with your class, but for future weeks: should I treat MIT-student-ID-gated free admission as bookable by default? I assumed yes per the rules, and no registration form asked for an ID number (I would never enter one)."
+    }
+  ],
+  "instructions_loaded": [],
+  "notes": [
+    "unnecessary escalation: pricing fort-point-gallery-2026-10-29 '\"Devon Park: First Light\" (Atelier 9 Gallery, 300 Summer St, Boston \u2014 Thu Oct 29'",
+    "unnecessary escalation: profile-gap harvard-art-museums-talk-2026-10-29 'The Harvard Art Museums gallery talk is free only \"for MIT and Harvard students '"
+  ]
+}

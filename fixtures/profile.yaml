@@ -1,0 +1,12 @@
+# Fake profile used ONLY in fixture mode (CURATOR_MODE=fixture). Nothing here
+# is real; the mock site records it in submissions.jsonl.
+name: "Test Student"
+first_name: "Test"
+last_name: "Student"
+email: "test.student@example.edu"
+phone: ""
+affiliation: "MIT Sloan School of Management"
+program: "MSMS 2027"
+student_status: "Graduate student"
+home_address: "100 Main St, Cambridge, MA 02142"
+saved_answers: {}

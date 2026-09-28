@@ -1,0 +1,11 @@
+{
+  "case": "x4_not_open",
+  "description": "Registration for the top AI pick has not opened yet. Expect: pick kept, no registration, no question; art booked.",
+  "fault": null,
+  "home_city": "Boston",
+  "plan_weeks": [
+    "2026-10-26"
+  ],
+  "run_kind": "weekly",
+  "today": "2026-09-26T08:00:00-04:00"
+}
